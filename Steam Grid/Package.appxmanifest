@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+  IgnorableNamespaces="uap rescap">
+
+  <Identity
+    Name="2380b846-9088-4629-8e79-c9c99d19d9d7"
+    Publisher="CN=pepei"
+    Version="1.0.0.0" />
+
+  <Properties>
+    <DisplayName>pepeizq&apos;s Steam Grids</DisplayName>
+    <PublisherDisplayName>pepeizq</PublisherDisplayName>
+    <Logo>Assets\Logos\StoreLogo.png</Logo>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.19041.0" MaxVersionTested="10.0.19041.0" />
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.19041.0" MaxVersionTested="10.0.19041.0" />
+  </Dependencies>
+
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+      Executable="$targetnametoken$.exe"
+      EntryPoint="$targetentrypoint$">
+      <uap:VisualElements
+        DisplayName="pepeizq&apos;s Steam Grids"
+        Description="https://pepeizqapps.com/"
+        BackgroundColor="#32414c"
+        Square150x150Logo="Assets\Logos\Square150x150Logo.png"
+        Square44x44Logo="Assets\Logos\Square44x44Logo.png">
+        <uap:DefaultTile Wide310x150Logo="Assets\Logos\Wide310x150Logo.png"  Square71x71Logo="Assets\Logos\SmallTile.png" Square310x310Logo="Assets\Logos\LargeTile.png"/>
+        <uap:SplashScreen Image="Assets\Logos\SplashScreen.png"  BackgroundColor="#32414c"/>
+        <uap:LockScreen BadgeLogo="Assets\Logos\BadgeLogo.png" Notification="badge"/>
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <rescap:Capability Name="runFullTrust" />
+  </Capabilities>
+</Package>

@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Steam Grid (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Steam Grid (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
